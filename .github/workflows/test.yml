@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Run Android emulator
-        uses: reactivecircus/android-emulator-runner@v2
+        uses: reactivecircus/android-emulator-runner@v2.17.0
         with:
           api-level: 29
           script: adb devices
