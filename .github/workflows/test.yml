@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Download Payfazz APK
-        run: curl https://api.codemagic.io/artifacts/6a4e70a5-7398-42e1-b89c-c467faf3d578/afd249b1-9513-40fa-92e7-e8ab3ad76e63/PF-staging-3.7.2-debug.apk
+        run: curl https://api.codemagic.io/artifacts/6a4e70a5-7398-42e1-b89c-c467faf3d578/afd249b1-9513-40fa-92e7-e8ab3ad76e63/PF-staging-3.7.2-debug.apk -o ./payfazz-staging.apk
       - name: Run Android emulator
         uses: reactivecircus/android-emulator-runner@v2.17.0
         with:
