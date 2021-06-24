@@ -18,4 +18,5 @@ jobs:
           api-level: 29
           emulator-build: 6110076
           arch: x86_64
-          script: avdmanager list && ls -ltr && adb install -t payfazz-staging.apk
+          profile: pixel_3
+          script: adb install payfazz-staging.apk
