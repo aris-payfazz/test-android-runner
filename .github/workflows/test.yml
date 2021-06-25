@@ -19,4 +19,4 @@ jobs:
           emulator-build: 6110076
           arch: x86_64
           profile: pixel_3
-          script: adb install payfazz-staging.apk
+          script: adb install -d payfazz-staging.apk
