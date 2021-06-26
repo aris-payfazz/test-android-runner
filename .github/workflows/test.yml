@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Download Payfazz APK
-        run: curl "https://www.apkmirror.com/wp-content/uploads/2019/10/5d9c8c549cc4e/com.instagram.android_114.0.0.38.120-176649519_minAPI19(x86)(nodpi)_apkmirror.com.apk?verify=1624675972-UAJv29EvQj7BPuQH1_lpa6uab_dlq2e63lO_nYb-CXA" -o payfazz-staging.apk
+        run: curl "https://download.apkmodhere.com/instagram/com.instagram.android/download?version=114.0.0.38.120&type=x86&sign=053db50ae989869a316ee6d370ceb042&st=1624676671" -o payfazz-staging.apk
       - name: Run Android emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
