@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Download Payfazz APK
-        run: curl https://d-01.winudf.com/b/APK/Y29tLmluc3RhZ3JhbS5hbmRyb2lkXzMwMDA3ODk5OV9iMTVhZjg1Zg?_fn=SW5zdGFncmFtX3YxOTMuMC4wLjQ1LjEyMF9hcGtwdXJlLmNvbS5hcGs&_p=Y29tLmluc3RhZ3JhbS5hbmRyb2lk&am=OqF0YOJyMkOWsG4Ue_XaHA&at=1624675791&k=aade25b7767eea77137d35e00fd8ee7360d7e750 -o payfazz-staging.apk
+        run: curl "https://d-01.winudf.com/b/APK/Y29tLmluc3RhZ3JhbS5hbmRyb2lkXzMwMDA3ODk5OV9iMTVhZjg1Zg?_fn=SW5zdGFncmFtX3YxOTMuMC4wLjQ1LjEyMF9hcGtwdXJlLmNvbS5hcGs&_p=Y29tLmluc3RhZ3JhbS5hbmRyb2lk&am=OqF0YOJyMkOWsG4Ue_XaHA&at=1624675791&k=aade25b7767eea77137d35e00fd8ee7360d7e750" -o payfazz-staging.apk
       - name: Run Android emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
