@@ -11,10 +11,13 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Download Payfazz APK
-        run: curl "https://download.apkmodhere.com/instagram/com.instagram.android/download?version=114.0.0.38.120&type=x86&sign=053db50ae989869a316ee6d370ceb042&st=1624676671" -o payfazz-staging.apk
+        run: curl "https://api.codemagic.io/artifacts/4e0b993e-57f9-407e-9c55-297b3b352f91/7a34bdfe-a670-458d-9160-cc0cb21dc1ee/PF-staging-3.7.3-debug.apk" -o payfazz-staging.apk
       - name: Run Android emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
           emulator-build: 7425822
+          arch: x86_64
+          profile: Nexus 6
+          target: default
           script: adb install payfazz-staging.apk
