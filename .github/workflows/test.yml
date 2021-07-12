@@ -17,7 +17,4 @@ jobs:
         with:
           api-level: 29
           emulator-build: 7425822
-          arch: x86_64
-          profile: Nexus 6
-          target: default
           script: adb install payfazz-staging.apk
